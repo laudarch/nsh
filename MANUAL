@@ -1316,7 +1316,7 @@ Section 7 > Adding system users to nsh
 OpenBSD has facilities for a user to be able to login directly to nsh without
 having access to a typical bourne or C shell.
 
-1a. Configure the user so they can run /bin/nsh from sudo.  You must
+1a. Configure the user so they can run /bin/nsh from doas.  You must
 do this in /etc/sudoers, like this:
 
 nshuser		ALL=NOPASSWD:/bin/nsh
@@ -1324,7 +1324,7 @@ nshuser		ALL=NOPASSWD:/bin/nsh
 (replace 'nshuser' with the actual user name)
 
 1b. Another way to configure sudoers is to allow all users that are members
-of a certain group to run NSH through sudo, like this:
+of a certain group to run NSH through doas, like this:
 
 %nshgroup	ALL=NOPASSWD:/bin/nsh
 
