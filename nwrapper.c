@@ -15,5 +15,5 @@
 
 main()
 {
- execl("/usr/bin/sudo","/usr/bin/sudo","/bin/nsh", (char *)NULL);
+ execl("/usr/bin/doas","/usr/bin/sudoas","/bin/nsh", (char *)NULL);
 }
